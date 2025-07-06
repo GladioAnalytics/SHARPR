@@ -1,5 +1,5 @@
-import yfinance as yf 
-from yahoo_fin.stock_info import *
+#import yfinance as yf 
+#from yahoo_fin.stock_info import *
 ## Standard Python Data Science stack
 import numpy as np
 import pandas as pd
