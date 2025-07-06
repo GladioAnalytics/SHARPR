@@ -112,7 +112,6 @@ pdfminer.six==20250327
 pdfplumber==0.11.6
 peewee==3.17.8
 pg8000==1.31.2
-pgcopy==1.6.0
 pillow==11.0.0
 pipreqs==0.4.13
 platformdirs==4.3.6
