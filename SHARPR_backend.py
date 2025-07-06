@@ -1466,7 +1466,8 @@ def load_monthly_factor_returns():
 
 def load_daily_factor_returns():
     data = pd.read_csv('daily_factor_returns.csv',index_col='Date')
-    data = data[['Mom   -FF','ST_Rev-FF', 'LT_Rev-FF', 'Mkt-RF-FF', 'SMB-FF','HML-FF', 'RMW-FF', 'CMA-FF', 'QMJ','UMD','R_ME-Q', 'R_IA-Q', 'R_ROE-Q', 'R_EG-Q']]
+    data = data[['Mom-FF','ST_Rev-FF', 'LT_Rev-FF', 'Mkt-RF-FF', 'SMB-FF', 'HML-FF',
+             'RMW-FF', 'CMA-FF', 'QMJ','UMD','R_ME-Q', 'R_IA-Q', 'R_ROE-Q', 'R_EG-Q']]
     data.columns = ['MOM','ST_Rev','LT_Rev','MKT_EXC','SMB','HML','RMW','CMA','QMJ','UMD','R_ME','INV','ROE','EXPGRO']
     data.index = pd.to_datetime(data.index)
     return data
