@@ -219,12 +219,12 @@ def reset_session_state():
     if 'asset_returns' in st.session_state.portfolio_state:
         del st.session_state.portfolio_state['asset_returns']
 
-st.title("Welcome to the SHARPR-Portfolio-Optimization App!")
+st.title("Welcome to the SHARPR Portfolio Optimization App!")
 st.write("How does this work?")
-st.write("Enter your the ticker symbolsfor the assets you hold(e.g. MSFT for Microsoft). Then, specify your Benchmark (e.g. SPY), the Risk-Free Rate and the Target Return")
-st.write("The SHARPR-App will then calculate eleven Portfolios. Each portfolio optimizes your asset holdings following a investment strategy.")
-st.write("The SHARPR-App (for now) shows you the gains of each stratey, the drawdowns (periods of losses), the composition of each portfolio, how much each asset contributes to your portfolio's risk, as well as to its risk-reward-ratio.")
-st.write("Finally, the SHARPR-App also gives you performance statistics of each strategy. This helps you decide which strategy is most suitable for you")
+st.write("Enter the ticker symbols for the assets you hold (e.g., MSFT for Microsoft). Then, specify your benchmark (e.g., SPY), the risk-free rate, and your target return.")
+st.write("The SHARPR App will then calculate eleven portfolios. Each portfolio optimizes your asset holdings based on a specific investment strategy.")
+st.write("The SHARPR App currently shows you the gains of each strategy, the drawdowns (periods of losses), the composition of each portfolio, how much each asset contributes to your portfolio's risk, as well as to its risk-reward ratio.")
+st.write("Finally, the SHARPR App also provides performance statistics for each strategy. This helps you decide which strategy is most suitable for you.")
 
 if st.button("Reset Analysis"):
     reset_session_state()
